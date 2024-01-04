@@ -162,7 +162,7 @@ z-index: 1;
     width: 100%;
 }
 #main .bar3:hover::before{
-    width: 100%;
+    width: 90%;
 }
 #main .bar4:hover::before{
     width: 100%;
