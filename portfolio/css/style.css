@@ -48,7 +48,7 @@
 */
 
 
-body{ font-family:'S-CoreDream-4Regular','Noto Sans KR', sans-serif; font-weight: 400;}
+body{ font-family:'S-CoreDream-4Regular','Noto Sans KR', sans-serif; padding: 0; margin: 0;}
 
 /* body{ overflow-x: hidden;} 급하게 반응형을 만들때 막아버림 끝나고 마지막에 넣는거임 */
 ul,ol,dl,dd,dt{ list-style: none; margin: 0; padding: 0;}
@@ -56,10 +56,11 @@ ul,ol,dl,dd,dt{ list-style: none; margin: 0; padding: 0;}
 
 
 /* 상단 */
+
 .navbar{
-    background-color: #ffffff90;
+    background-color: #ffffff;
 }
-#hd h1 a img{
+#hd .nav a img{
     height:4rem;
 }
 
@@ -72,7 +73,7 @@ ul,ol,dl,dd,dt{ list-style: none; margin: 0; padding: 0;}
 
 /* 섹션 배경 */
 /* .bg1{background: #a2f0ba7c;} */
-.bg{width: 100%; background: #fdd2f67d;}
+.bg{width: 100%; background: #fff3fd;}
 /* .bg3{background: #a9e7ff7c;} */
 
 /* bg1 */
@@ -93,8 +94,8 @@ ul,ol,dl,dd,dt{ list-style: none; margin: 0; padding: 0;}
 
 /* bg2 */
 .bg2_t{
-    background: rgb(255, 192, 203);
-    color: #666;
+    background: #ffc0cb;
+    color: #00000060;
     align-items: center;
     padding: 2%;
     /* margin-left: 5px; */
@@ -108,41 +109,50 @@ ul,ol,dl,dd,dt{ list-style: none; margin: 0; padding: 0;}
 }
 
 .img-fluid{
-    /* max-width: 15vh; */
+    max-width: 60vh;
     min-width: 15vh;
 }
 
+
 .heart{
-    background-image: url("/hanbi/img/heart.svg");
+    background-image: url("../img/heart.svg");
     width: 8em;
     height: 8em;
-    position: relative;
 }
 .ht{
     text-align: center;
-    position: absolute;
+    /* position: absolute;
     top: 2.8em;
     left: 0;
     right: 0;
-    bottom: 0;
-    color: #666;
+    bottom: 0; */
+    line-height: 115px;
+    color: #00000060;
 }
+
+
+.technology{
+    width: 40%;
+}
+.technology div .graph .heart span:hover{
+    color: #222;
+}
+
 
 
 #main .bar1,
 #main .bar2,
 #main .bar3,
-#main .bar4{
-    position: relative;
+#main .bar4,
+#main .bar5{
     width: 100%;
-    /* margin-left: 3em;
-    margin-right: 3em; */
 }
 
 #main .bar1::before,
 #main .bar2::before,
 #main .bar3::before,
-#main .bar4::before{
+#main .bar4::before,
+#main .bar5::before{
 display: block;
 content: "";
 position: absolute;
@@ -167,18 +177,23 @@ z-index: 1;
 #main .bar4:hover::before{
     width: 100%;
 }
+#main .bar5:hover::before{
+    width: 100%;
+}
 
 #main .bar1:hover span,
 #main .bar2:hover span,
 #main .bar3:hover span,
-#main .bar4:hover span{
-    color: #666;
+#main .bar4:hover span,
+#main .bar5:hover span{
+    color: #ffffff;
 }
 
 #main .bar1 span,
 #main .bar2 span,
 #main .bar3 span,
-#main .bar4 span{
+#main .bar4 span,
+#main .bar5 span{
 color: transparent;
 position: relative;
 z-index: 99;
@@ -212,8 +227,8 @@ line-height: 40px;
 
 /* bg3 */
 
-.bg ul{margin: 0 auto;}
-.bg ul li{
+.bg3 ul{margin: 0 auto;}
+.bg3 ul li{
     display: inline;
     margin: 20px 0;
 }
@@ -268,7 +283,6 @@ line-height: 40px;
 
 .ft{
     text-align: center;
-    font-size: 0.1;
 }
 
 .copy{
