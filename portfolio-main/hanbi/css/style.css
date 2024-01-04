@@ -60,7 +60,7 @@ ul,ol,dl,dd,dt{ list-style: none; margin: 0; padding: 0;}
     background-color: #ffffff90;
 }
 #hd h1 a img{
-    height:8rem;
+    height:4rem;
 }
 
 #hd > div:after{
@@ -81,7 +81,7 @@ ul,ol,dl,dd,dt{ list-style: none; margin: 0; padding: 0;}
     min-height: 400px;
     height: 100vw; /* 이렇게 하면 끝! 나는 화면 넓이만큼 높이를 줄게 vw = 화면 넓이 단위 */
 }
-.puble{margin: 0 auto;}
+/* .puble{margin: 0 auto;} */
 .puble img{max-width: 10em;}
 .hard, .ecom, .pro{
     height: 10vh;
