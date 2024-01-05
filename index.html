@@ -9,6 +9,7 @@
     <!-- 외부스타일시트 -->
     <link rel="stylesheet" href="./portfolio/css/style.css">
     <link rel="stylesheet" href="./portfolio/css/base.css">
+    <link rel="stylesheet" href="./portfolio/css/font.css">
 
         <!-- 파비콘 -->
         <!-- <link rel="icon" href="/hanbi/img/hanbi_favicon.png"> -->
@@ -54,187 +55,137 @@
 <body>
     <div id="wrap">
         <header id="hd" class="p-rel z-999 border-0 fixed-top">
-            <nav class="navbar d-flex justify-content-around align-items-center">
-                <!-- md사이즈 이상일때 컨테이너와 d-flex 처리
-                justify-content-between/align-items-center는 flex와 연관된 부가적인 명령이기때문에 flex가 사라지면 얘네도 자동으로 안먹히게됨 -->
-                <h1 class="nav text-center">
-                    <a href="https://hanbi5516.github.io/hanbi/">
-                        <img src="./portfolio/img/hanbi_og_img.png" alt="로고">
-                    </a>
-                </h1>
-                <!-- <button id="allMenu" class="d-md-none border-0 bg-transparent">
-                    <i class="fa-solid fa-bars">
-                        <span class="sr-only">전체메뉴 열기</span>
-                    </i>
-                    <i class="fa-solid fa-xmark">
-                        <span class="sr-only">전체메뉴 닫기</span>
-                    </i>
-                </button> -->
-                <ul id="gnb" class="d-flex justify-content-around pl-0 mb-0">
-                    <li class="pl-3 pr-3"><a href='#portfolio'>portfolio</a></li>
-                    <li class="pl-3 pr-3"><a href='#me'>ability</a></li>
-                    <li class="pl-3 pr-3"><a href='#preinterview'>interview</a></li>
-                    <!-- md 이상일때 오른쪽패딩pr-0 왼쪽패딩pl-3 -->
-                </ul>
+            <nav class="navbar">
+                <div class="header d-flex justify-content-evenly align-items-center m-0-auto">
+                    <div class="nav pr-4 pl-4">
+                        <a href="https://hanbi5516.github.io/hanbi/">
+                            <img src="./portfolio/img/hanbi_og_img.png" alt="로고">
+                        </a>
+                    </div>
+                    <ul id="gnb" class="d-flex justify-content-around pr-4 pl-4">
+                        <li class="pl-3 pr-3"><a href='#portfolio'>about me</a></li>
+                        <li class="pl-3 pr-3"><a href='#project'>project</a></li>
+                        <li class="pl-3 pr-3"><a href='#interview'>interview</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
-        
-        <!-- <div>
-            <a id="top_btn" class="">TOP</a>  
-        </div> -->
-        
-        <div class="bg">
-            <section id="main">
-                <div id="portfolio" class="bg1">
-                    <div class="first d-flex justify-content-around flex-sm-column">
-                        <!-- Slides -->
-                        <!-- 플러그인 클래스명은 임의대로 수정하면 안되고 임의로 내 클래스명을 넣어서 커스터마이징해줘야 함 -->
-                        <div class="puble d-flex flex-column align-items-center m-0">
-                            <img src="./portfolio/img/hanbi_hi_2.png" alt="인사하는 토끼">
-                            <h6>ui·ux designer</h6>
-                            <h6>부트스트랩을 활용하여 반응형을 최적화시켰습니다.</h6>
-                            <h6>aos 최적화를 통해 제이쿼리 구동을 편리하게 하였습니다.</h6>
-                        </div>
-                        <div class="produce text-center">
-                            <span>자격증 취득 : 2022.06.17</span><br>
-                            <span>사회경험 : 선명씨앤피 입사 2018.11 / 퇴사 2021.06</span><br>
-                            <span>사회경험 : 씨케이스택 입사 2022.11 / 재직중 2024. 01</span><br>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center pt-3">
-                            <div class="hard">
-                                <h5 class="text-center">
-                                    자유롭지만 강렬한 디자인을 만드는<br>
-                                    <strong>디자이너</strong>
-                                </h5>
-                            </div>
-                            <div class="ecom">
-                                <h5 class="text-center">
-                                    양방향 소통이 가능한<br>
-                                    <strong>디자이너</strong>
-                                </h5>
-                            </div>
-                            <div class="pro">
-                                <h5 class="text-center">
-                                    트렌드를 선두하는<br>
-                                    <strong>디자이너</strong>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
+        <section id="main" class="bg">
+            <div id="portfolio" class="section_1 d-flex justify-content-evenly m-0-auto align-items-center">
+                <div class="hanbi_character">
+                    <img src="./portfolio/img/hanbi_hi_1.png" alt="hanbi's character">
                 </div>
-
-
-                <div id="me" class="bg2">
-                    <div>
-                        <div class="bg2_t text-center">
-                            <strong>원활한 소통</strong>
-                            <span>과</span>
-                            <strong>팀원과의 협업</strong>
-                            <span>을 가장 중시하는 디자이너 박한비입니다.</span>
-                        </div>
-                        <div class="d-flex justify-content-around align-items-center d-sm-flex justify-content-sm-center align-items-sm-center">
-                            <div class="col-4 d-sm-flex justify-content-sm-center align-items-sm-center">
-                                <img class="img-fluid ml-4 mr-4" src="./portfolio/img/hanbi_hi_1.png" alt="박한비의 프로필 사진">
-                            </div>
-                            <div class="technology col-4 text-center">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="graph">
-                                        <div class="heart mx-auto">
-                                            <span class="ht">illustrator</span>
-                                        </div>
-                                    </div>
-                                    <div class="bar1 p-rel ml-3 mr-3">
-                                        <span>100%</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="graph">
-                                        <div class="heart mx-auto">
-                                            <span class="ht">photoshop</span>
-                                        </div>
-                                    </div>
-                                    <div class="bar2 p-rel ml-3 mr-3">
-                                        <span>100%</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="graph">
-                                        <div class="heart mx-auto">
-                                            <span class="ht">vscode</span>
-                                        </div>
-                                    </div>
-                                    <div class="bar3 p-rel ml-3 mr-3">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="graph">
-                                        <div class="heart mx-auto">
-                                            <span class="ht">figma</span>
-                                        </div>
-                                    </div>
-                                    <div class="bar4 p-rel ml-3 mr-3">
-                                        <span>100%</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="graph">
-                                        <div class="heart mx-auto">
-                                            <span class="ht">zeplin</span>
-                                        </div>
-                                    </div>
-                                    <div class="bar5 p-rel ml-3 mr-3">
-                                        <span>100%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="swipe">
+                    <div class="about_me">
+                        <span>
+                            <strong>양방향 소통이 가능한</strong> 디자이너 <strong>박한비</strong>입니다
+                        </span>
                     </div>
-                </div>
-
-                <div id="preinterview" class="bg3">
-                    <h3 class="bg3_title text-center pb-5">사전인터뷰</h3>
-                    <div class=" col-md-5">
-                        <ul class="bg3_answer d-flex flex-column align-items-center">
-                            <li class="">
-                                <span>어떤 팀원 찾으시나요?</span>
-                                <ul class="d-flex flex-column">
-                                    <li>1. 서로의 의견을 하나로 모으기 위해 끊임없이 회의하는 팀원</li>
-                                    <li>2. 피드백 전달과 수용이 빠른 팀원</li>
-                                    <li>3. </li>
-                                    <li>4. </li>
-                                    <li>5. </li>
-                                </ul>
+                    <div class="history">
+                        <ul>
+                            <li>
+                                <span>2017. 03. 02. 신구대 입학</span>
                             </li>
-                        </ul>
-                    </div>
-                    <div class=" col-md-5">
-                        <ul class="bg3_answer col-5 d-flex flex-column align-items-center">
-                            <li class="">
-                                <span>당신은 어떤 사람인가요?</span>
-                                <ul class="d-flex flex-column">
-                                    <li>1. 정해진 규격과 원리에서 벗어나지 않는 사람</li>
-                                    <li>2. 클라이언트 요구사항을 빠르게 파악하기위해 노력하는 사람</li>
-                                    <li>3. 빠른 문서작업을 위해 프로젝트에 녹아드는 사람</li>
-                                    <li>4. </li>
-                                    <li>5. </li>
-                                </ul>
+                            <li>
+                                <span>2018. 11. 01. 선명씨앤피 입사</span>
+                            </li>
+                            <li>
+                                <span>2021. 06. 30. 선명씨앤피 퇴사</span>
+                            </li>
+                            <li>
+                                <span>2022. 04 - 09 성남 그린아카데미 수료</span>
+                            </li>
+                            <li>
+                                <span>2022. 11. 21. 씨케이스택 입사</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <footer id="ft" class="">
-                <div class="ft">
-                    박한비입니다. / hanbi_211122@gmail.com /
-                    <a href="tel:01076135516">바로전화걸기</a>
-                    <!-- <a href="">Instagram</a> -->
-                    <div id="ft_copy">Copyright &copy; <b>bakhanbi</b> All rights reserved.</div>
+            <div id="project" class="section_2 d-flex justify-content-evenly m-0-auto align-items-center">
+                <div class="hyundaiwia">
+                    <a href="https://www.figma.com/file/72LMsCTlkvxtH1fJvkTm7L/Untitled?type=design&node-id=0%3A1&mode=design&t=MGlIXAMddblxOM0K-1">
+                        <img src="./portfolio/img/heart.svg" alt="현대위아 피그마 작업화면">
+                    </a>
                 </div>
-            </footer>
-        </div>
+                <div class="facemapping">
+                    <a href="https://www.figma.com/file/XMR5VlZSnoNbbTiJ1qFiGE/Untitled?type=design&node-id=0%3A1&mode=design&t=MGlIXAMddblxOM0K-1">
+                        <img src="./portfolio/img/heart.svg" alt="페이스맵핑 피그마 작업화면">
+                    </a>
+                </div>
+                <div class="brita">
+                    <a href="https://www.figma.com/file/rKQzhnFJKlfhPZlKxPMgIW/Untitled?type=design&node-id=0%3A1&mode=design&t=FcSucQVd8Upxdezq-1">
+                        <img src="./portfolio/img/heart.svg" alt="브리타 개발화면">
+                    </a>
+                </div>
+                <div class="fleur">
+                    <a href="https://www.figma.com/file/yqMWdXRgzhSuDaZwFWsT0R/Untitled?type=design&mode=design&t=FcSucQVd8Upxdezq-1">
+                        <img src="./portfolio/img/heart.svg" alt="fleur 개발화면">
+                    </a>
+                </div>
+            </div>
+
+            <div id="interview" class="section_3 d-flex justify-content-evenly m-0-auto align-items-center">
+
+                <div class="find_team">
+                    <ul class="question d-flex flex-column align-items-center">
+                        <li class="">
+                            <span>저는 이런 사람들과 일하고 싶어요!</span>
+                            <ul class="answer d-flex flex-column">
+                                <li>
+                                    <span>서로의 의견을 하나로 모으기 위해 끊임없이 회의하는 팀원</span>
+                                </li>
+                                <li>
+                                    <span>피드백 전달과 수용이 빠른 팀원</span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="who_am_i">
+                    <ul class="question d-flex flex-column align-items-center">
+                        <li class="">
+                            <span>당신은 어떤 사람인가요?</span>
+                            <ul class="answer d-flex flex-column">
+                                <li>
+                                    <span>정해진 규격과 원리에서 벗어나지 않는 사람</span>
+                                </li>
+                                <li>
+                                    <span>클라이언트 요구사항을 빠르게 파악하기위해 노력하는 사람</span>
+                                </li>
+                                <li>
+                                    <span>빠른 문서작업을 위해 프로젝트에 녹아드는 사람</span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
+    <footer id="ft" class="bottom">
+        <div class="ft text-center m-0-auto">
+            <span>hanbi_211122@gmail.com · 010-7613-5516</span>
+            <!-- <a href="">Instagram</a> -->
+            <div id="ft_copy">Copyright &copy; bakhanbi All rights reserved.</div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
