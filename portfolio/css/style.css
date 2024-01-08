@@ -1,54 +1,164 @@
+/* 내부컨텐츠 라인 */
+#portfolio,#project,#interview{
+    width: 2000px;
+    height: 100vh;
+}
 /* 최상단 헤더 */
 .navbar{
-    width: 2560px;
+    width: 100%;
     background-color: #ffffff;
     height: 50px;
 }
-
+.navbar .header{
+    width: 2000px;
+}
+#hd .nav{
+    width: 60px;
+    height: 36px;
+}
 #hd .nav a img{
     height:2rem;
 }
-.navbar #gnb li a:hover{
+.navbar .gnb{
+    width: 600px;
+}
+.navbar .gnb li a:hover{
     color: #ffc0cb;
 }
 .navbar .header .nav a img,
-.navbar .header #gnb li a{
+.navbar .header .gnb li a{
     line-height: 50px;
 }
 
 /* portfolio, section_1 */
-#portfolio{
-    max-height: 700px; /* 데스크탑 전용 기준 700픽셀이상 커지지 마! */
-    min-height: 400px;
-    height: 100vh; /* 이렇게 하면 끝! 나는 화면 넓이만큼 높이를 줄게 vw = 화면 넓이 단위 */
-    width: 1270px;
-}
+/* #portfolio{
+    height: 100vh;
+    width: 100%;
+} */
 .hanbi_character img{
     height: 30em;
 }
 
 /* project, section_2 */
 
-#project{
-    max-height: 700px;
-    min-height: 400px;
+/* #project{
     height: 100vh;
-    width: 1270px;
-}
+    width: 100%;
+} */
 #project .hyundaiwia a img,
 #project .facemapping a img,
 #project .brita a img,
 #project .fleur a img{
-    height: 30em;
+    width: 300px;
+    height: 80vh;
+    vertical-align: middle;
+}
+.section_2 .box a:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+.hyundaiwia .img_01 a::before{
+    content: '';
+    width: 300px;
+    height: 80vh;
+    background-color: #00000040;
+    background-size: 100%;
+    position: absolute;
+    top: 111.9%; bottom: 0; left: 466px;
+    margin: -17px 0 0 -26px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.facemapping .img_02 a::before{
+    content: '';
+    width: 300px;
+    height: 80vh;
+    background-color: #00000040;
+    background-size: 100%;
+    position: absolute;
+    top: 111.9%; bottom: 0; left: 926px;
+    margin: -17px 0 0 -26px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.brita .img_03 a::before{
+    content: '';
+    width: 300px;
+    height: 80vh;
+    background-color: #00000040;
+    background-size: 100%;
+    position: absolute;
+    top: 111.9%; bottom: 0; left: 1386px;
+    margin: -17px 0 0 -26px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.fleur .img_04 a::before{
+    content: '';
+    width: 300px;
+    height: 80vh;
+    background-color: #00000040;
+    background-size: 100%;
+    position: absolute;
+    top: 111.9%; bottom: 0; left: 1846px;
+    margin: -17px 0 0 -26px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
+/* #project .hyundai_t::before{
+    top: 50%; bottom: 100%; left: 16.48%; right: 80%;
+    width: 300px;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    background-color: #00000040;
+    color: #fff;
+    content: "";
+} */
+/* #project .facemapping_t::before{
+    top: 50%; bottom: 100%; left: 38.82%; right: 80%;
+    width: 300px;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    background-color: #00000040;
+    color: #fff;
+    content: "";
+} */
+/* #project .brita_t::before{
+    top: 50%; bottom: 100%; left: 61.18%; right: 80%;
+    width: 300px;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    background-color: #00000040;
+    color: #fff;
+    content: "";
+} */
+/* #project .fleur_t::before{
+    top: 50%; bottom: 100%; left: 83.51%; right: 80%;
+    width: 300px;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    background-color: #00000040;
+    color: #fff;
+    content: "";
+} */
+
+
+
+
 /* interview, section_3 */
-#interview{
-    max-height: 700px;
-    min-height: 400px;
+/* #interview{
     height: 100vh;
-    width: 1270px;
-}
+    width: 100%;
+} */
 .find_team,
 .who_am_i{
     background-color: #ffffff;
@@ -65,8 +175,11 @@
 .who_am_i .question > li span{
     line-height: 20px;
 }
-.que_img,
-.ans_img{
+.question > li{
+    margin: 40px 0;
+}
+.answer li{
+    margin: 8px 0;
 }
 
 /* footer */

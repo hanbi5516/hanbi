@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0;}
-body{background-color: #fff4fd;}
+body{background-color: #fff4fd; width: 2560px!important;}
 ul,ol,dl{list-style: none!important;}
 h1,h2,h3,h4,h5,h6{font-size: 16px!important; font-weight: 400!important;}
 span{font-size: 16px!important; font-weight: 500!important; letter-spacing: 1px!important;}
@@ -59,10 +59,14 @@ a{display: block!important; font-size: 16px!important; font-weight: 500!importan
 .mr-5{margin-right: 5em!important;}
 
 .text-center{text-align: center!important;}
-
+.t-w{color: #fff;}
+.t-0{color: #000;}
+.t-c{color: #ccc;}
+.t-2{color: #222;}
+.t-040{color: #00000040;}
 
 
 .flex-column{flex-direction: column!important;}
 .flex-row{flex-direction: row!important;}
 
-#portfolio,#project,#interview{min-height: 40vh; max-height: 100vh!important; min-width: 2560px!important; margin-top: 10em;}
+#portfolio,#project,#interview{min-height: 40vh; max-height: 100vh!important; min-width: 1000px!important; max-width: 2560px!important;}
