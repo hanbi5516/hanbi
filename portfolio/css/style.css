@@ -66,8 +66,8 @@
     background-color: #00000040;
     background-size: 100%;
     position: absolute;
-    top: 111.9%; bottom: 0; left: 466px;
-    margin: -17px 0 0 -26px;
+    top: 111.43%; bottom: 0; left: 440px;
+    /* margin: -17px 0 0 -26px; */
     opacity: 0;
     visibility: hidden;
     -webkit-transition: 0.5s;
@@ -82,8 +82,8 @@
     background-color: #00000040;
     background-size: 100%;
     position: absolute;
-    top: 111.9%; bottom: 0; left: 926px;
-    margin: -17px 0 0 -26px;
+    top: 111.43%; bottom: 0; left: 900px;
+    /* margin: -17px 0 0 -26px; */
     opacity: 0;
     visibility: hidden;
     -webkit-transition: 0.5s;
@@ -98,8 +98,8 @@
     background-color: #00000040;
     background-size: 100%;
     position: absolute;
-    top: 111.9%; bottom: 0; left: 1386px;
-    margin: -17px 0 0 -26px;
+    top: 111.43%; bottom: 0; left: 1360px;
+    /* margin: -17px 0 0 -26px; */
     opacity: 0;
     visibility: hidden;
     -webkit-transition: 0.5s;
@@ -114,8 +114,8 @@
     background-color: #00000040;
     background-size: 100%;
     position: absolute;
-    top: 111.9%; bottom: 0; left: 1846px;
-    margin: -17px 0 0 -26px;
+    top: 111.43%; bottom: 0; left: 1820px;
+    /* margin: -17px 0 0 -26px; */
     opacity: 0;
     visibility: hidden;
     -webkit-transition: 0.5s;
