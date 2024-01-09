@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0;}
-body{background-color: #fff4fd; width: 2560px!important;}
+body{background-color: #fff4fd; width: 2560px!important; overflow-x: hidden!important;}
 ul,ol,dl{list-style: none!important;}
 h1,h2,h3,h4,h5,h6{font-size: 16px!important; font-weight: 400!important;}
 span{font-size: 16px!important; font-weight: 500!important; letter-spacing: 1px!important;}
@@ -20,6 +20,7 @@ a{display: block!important; font-size: 16px!important; font-weight: 500!importan
 .justify-content-around{ justify-content: space-around!important; }
 .justify-content-between{ justify-content: space-between!important; }
 .justify-content-evenly{ justify-content: space-evenly!important; }
+.justify-content-center{ justify-content: center!important; }
 .align-items-center{ align-items: center!important; }
 .align-items-start{ align-items: flex-start!important; }
 .align-items-end{ align-items: flex-end!important; }
@@ -70,3 +71,6 @@ a{display: block!important; font-size: 16px!important; font-weight: 500!importan
 .flex-row{flex-direction: row!important;}
 
 #portfolio,#project,#interview{min-height: 40vh; max-height: 100vh!important; min-width: 1000px!important; max-width: 2560px!important;}
+
+.swiper{margin: 0!important;}
+

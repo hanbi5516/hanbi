@@ -3,6 +3,10 @@
     width: 2000px;
     height: 100vh;
 }
+#ft{
+    width: 2000px;
+    height: 50px;
+}
 /* 최상단 헤더 */
 .navbar{
     width: 100%;
@@ -29,22 +33,50 @@
 .navbar .header .gnb li a{
     line-height: 50px;
 }
-
-/* portfolio, section_1 */
-/* #portfolio{
-    height: 100vh;
-    width: 100%;
-} */
 .hanbi_character img{
     height: 30em;
 }
 
-/* project, section_2 */
-
-/* #project{
-    height: 100vh;
+/* main, section_1 */
+.swiper {
+    width: 480px;
+    height: 480px;
+}
+.swiper-slide {
+    /* text-align: center; */
+    /* font-size: 18px; */
+    /* background: #fff; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.swiper-slide img {
+    display: block;
     width: 100%;
-} */
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-next{
+    width: 20px;
+    height: 20px;
+}
+.swiper-button-prev{
+    background-image: url(/portfolio/img/btn_prev.svg);
+}
+.swiper-pagination{
+    background-image: url(/portfolio/img/pagenation_1.svg);
+}
+:root{
+    --swiper-theme-color:#ffc0cb!important;
+}
+.swiper-pagination-bullet{
+    background-color: #ff2c4f60!important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #ffc0cb!important;
+}
+
+/* project, section_2 */
 #project .hyundaiwia a img,
 #project .facemapping a img,
 #project .brita a img,
@@ -66,7 +98,7 @@
     background-color: #00000040;
     background-size: 100%;
     position: absolute;
-    top: 111.43%; bottom: 0; left: 440px;
+    top: 110%; bottom: 0; left: 440px;
     /* margin: -17px 0 0 -26px; */
     opacity: 0;
     visibility: hidden;
@@ -82,7 +114,7 @@
     background-color: #00000040;
     background-size: 100%;
     position: absolute;
-    top: 111.43%; bottom: 0; left: 900px;
+    top: 110%; bottom: 0; left: 900px;
     /* margin: -17px 0 0 -26px; */
     opacity: 0;
     visibility: hidden;
@@ -98,7 +130,7 @@
     background-color: #00000040;
     background-size: 100%;
     position: absolute;
-    top: 111.43%; bottom: 0; left: 1360px;
+    top: 110%; bottom: 0; left: 1360px;
     /* margin: -17px 0 0 -26px; */
     opacity: 0;
     visibility: hidden;
@@ -114,7 +146,7 @@
     background-color: #00000040;
     background-size: 100%;
     position: absolute;
-    top: 111.43%; bottom: 0; left: 1820px;
+    top: 110%; bottom: 0; left: 1820px;
     /* margin: -17px 0 0 -26px; */
     opacity: 0;
     visibility: hidden;
