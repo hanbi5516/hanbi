@@ -42,14 +42,14 @@
     width: 480px;
     height: 480px;
 }
-.swiper-slide {
-    /* text-align: center; */
-    /* font-size: 18px; */
-    /* background: #fff; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-}
+/* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -60,12 +60,6 @@
     width: 20px;
     height: 20px;
 }
-.swiper-button-prev{
-    background-image: url(/portfolio/img/btn_prev.svg);
-}
-.swiper-pagination{
-    background-image: url(/portfolio/img/pagenation_1.svg);
-}
 :root{
     --swiper-theme-color:#ffc0cb!important;
 }
@@ -75,6 +69,8 @@
 .swiper-pagination-bullet-active{
     background-color: #ffc0cb!important;
 }
+
+
 
 /* project, section_2 */
 #project .hyundaiwia a img,
