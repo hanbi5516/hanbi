@@ -9,7 +9,7 @@ $(document).ready(function(){
         $(this).toggleClass('open');
     })
 
-    $('#gnb a').click(function(e){
+    $('.gnb a').click(function(e){
         e.preventDefault();
 
         var clicka = $(this); // 저장하기 클릭할때마다 새롭게 저장하게끔 한거임
